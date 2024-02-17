@@ -1,0 +1,7 @@
+
+Z
+java:S1854"=Remove this useless assignment to local variable "listNode2".(Ô˜˜í8²ÆæáÚ1
+K
+java:S1481".Remove this unused "listNode2" local variable.(Ô˜˜í8²ÆæáÚ1
+X	java:S125"<This block of commented-out lines of code should be removed.(ˆäÔÒ8²ÆæáÚ1
+L	java:S106	"+Replace this use of System.out by a logger.(Ë •ƒýÿÿÿÿ8²ÆæáÚ1

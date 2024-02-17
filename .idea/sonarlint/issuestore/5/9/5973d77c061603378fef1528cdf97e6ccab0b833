@@ -1,0 +1,7 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(•†¦Ğ8ƒù¼íÚ1
+m
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(â¾ı8‡ú¼íÚ1
+G	java:S106"+Replace this use of System.out by a logger.(™‘ô8‰ú¼íÚ1
+`
+java:S1155!">Use isEmpty() to check whether the collection is empty or not.(ÍéôĞıÿÿÿÿ8Šú¼íÚ1

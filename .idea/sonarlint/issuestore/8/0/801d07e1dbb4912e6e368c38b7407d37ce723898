@@ -1,0 +1,20 @@
+
+K
+java:S1066%"/Merge this if statement with the enclosing one.(åõ±	8Äì¼³Ú1
+K
+java:S1066D"/Merge this if statement with the enclosing one.(åõ±	8Åì¼³Ú1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(•Á¿¤8Æì¼³Ú1
+G	java:S106"+Replace this use of System.out by a logger.(è”8Ïí¼³Ú1
+X	java:S125"<This block of commented-out lines of code should be removed.(Á¦Äã8Â‘Ó³Ú1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Š¥ºì8Ïí¼³Ú1
+D
+java:S1125$"'Remove the unnecessary boolean literal.(¦éãÉ8Ñí¼³Ú1
+o
+java:S3776."RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(­´–8Òí¼³Ú1
+[
+java:S11553">Use isEmpty() to check whether the collection is empty or not.(İÃŸš8Óí¼³Ú1
+I
+java:S1125;"'Remove the unnecessary boolean literal.(µ²¤èùÿÿÿÿ8Óí¼³Ú1
+D
+java:S1125C"'Remove the unnecessary boolean literal.(¦éãÉ8Ôí¼³Ú1

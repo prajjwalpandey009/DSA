@@ -1,0 +1,8 @@
+
+r
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ8†ù¾‹Û1
+r
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(³£³þýÿÿÿÿ8‡ù¾‹Û1
+L	java:S106	"+Replace this use of System.out by a logger.(Í…ªÀøÿÿÿÿ8ˆù¾‹Û1
+`
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ô…²–ûÿÿÿÿ8Šù¾‹Û1
