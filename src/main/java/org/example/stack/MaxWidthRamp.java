@@ -1,7 +1,14 @@
 package org.example.stack;
 
-
 import java.util.Stack;
+
+//Algo
+//First try to find out the smallest possible number from the left
+//by iterating over the array
+
+//Then start traversing from the end, so you will get the maximum difference
+//if stack peek is smaller than end so pop end repeat it and if end is smaller than peek decrease the end
+//do until your stack element is empty or you have reached to 0
 
 public class MaxWidthRamp {
     public static void main(String[] args) {
