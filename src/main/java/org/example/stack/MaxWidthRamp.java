@@ -41,4 +41,7 @@ public class MaxWidthRamp {
     }
 
 
+    //Solve by checking max element from right
+
+
 }
