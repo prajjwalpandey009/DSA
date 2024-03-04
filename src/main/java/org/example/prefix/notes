@@ -1,0 +1,5 @@
+
+Prefix sum
+
+suffix sum (i+1) = Total sum - prefix sum (i)
+

@@ -1,0 +1,6 @@
+// Find min and max in rotated sorted array
+//Pivot point concept
+
+//Left and right bound concept check every possible left division and same on right
+//part also
+

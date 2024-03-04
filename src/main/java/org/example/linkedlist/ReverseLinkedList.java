@@ -19,20 +19,23 @@ public class ReverseLinkedList {
             return head;
         }
         ListNode prev = head;
-        ListNode currentNode = head.next;
-        while (currentNode.next != null) {
-            ListNode nextNode = currentNode.next;
-            currentNode.next = prev;
+        ListNode curr = head.next;
 
-            //update
-            prev = currentNode;
-            currentNode = nextNode;
+        while (curr.next != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+
+            //update the previous and current
+            prev = curr;
+            curr = next;
         }
-        currentNode.next = prev;
-        prev = currentNode;
 
+        //When reached to last node
+        curr.next = prev;
+
+        //In starting we haven't set the null in head so now it present in last so set it null
         head.next = null;
-        head = prev;
-        return head;
+
+        return curr;
     }
 }

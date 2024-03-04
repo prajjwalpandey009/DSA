@@ -1,0 +1,12 @@
+
+
+Type-1
+
+Partition of List in a manner so all substring is palindrome
+Loop startegy
+
+Type-2
+get all the possible palindrome from string
+//recursion strategy remove frist and remove last strategy
+
+type-3

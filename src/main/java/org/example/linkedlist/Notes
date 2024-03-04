@@ -1,0 +1,6 @@
+Always add one dummy node in the linked list it will help you to cater all
+your negative cases
+add head in the next of dummy
+This approach probably works in those cases in which you will need two pointers fot tracking
+
+and you dont need to maintain any previous pointers and all that
