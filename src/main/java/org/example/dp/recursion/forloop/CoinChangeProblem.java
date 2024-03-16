@@ -1,4 +1,4 @@
-package org.example.dp.recursion;
+package org.example.dp.recursion.forloop;
 
 public class CoinChangeProblem {
     public static void main(String[] args) {
