@@ -15,6 +15,7 @@ public class BestTimeToBuyAndSellStock {
 
     public static int maxProfit(int[] prices) {
 
+        //least price so far
         int lpsf = Integer.MAX_VALUE;
 
         //profit if sell today

@@ -6,17 +6,6 @@ public class NetworkDelayTime {
     public static void main(String[] args) {
         System.out.println(networkDelayTime(new int[][]{{1, 2, 1}, {2, 3, 2}, {1, 3, 4}}, 3, 1));
     }
-
-    static class Pair {
-        List<int[]> nodes;
-        int cost;
-
-        public Pair(List<int[]> nodes, int cost) {
-            this.nodes = nodes;
-            this.cost = cost;
-        }
-    }
-
     public static int networkDelayTime(int[][] times, int n, int k) {
         List<List<int[]>> listoflist = new ArrayList<>();
         listoflist.add(new ArrayList<>());
@@ -46,8 +35,10 @@ public class NetworkDelayTime {
 
             for (int[] adjacentNodeAndCost : listoflist.get(node)) {
                 int adjacentNode = adjacentNodeAndCost[0];
-                int oldCostToAdjacentNode = distance[adjacentNode];
                 int newcostToAdjacentNode = cost + adjacentNodeAndCost[1];
+
+                int oldCostToAdjacentNode = distance[adjacentNode];
+
 
                 //checking of cost to adjacent node is low then update it in distance array
                 if (oldCostToAdjacentNode > newcostToAdjacentNode) {

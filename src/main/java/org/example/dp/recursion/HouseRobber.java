@@ -14,8 +14,12 @@ public class HouseRobber {
         if (i >= n) {
             return 0;
         }
+        //If steal the money so add it and then move to house next to adjacent
         int steal = nums[i] + solve(nums, i + 2, n);
+
+        //If skip the money dont add anything just move to next house
         int skip = solve(nums, i + 1, n);
+
         return Math.max(steal, skip);
     }
 }

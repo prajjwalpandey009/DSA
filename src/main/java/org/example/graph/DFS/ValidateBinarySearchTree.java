@@ -5,16 +5,6 @@ import org.example.utility.Utility;
 
 import java.util.Stack;
 
-class Pair {
-    TreeNode node;
-    int[] range = new int[2];
-
-    public Pair(TreeNode node, int[] range) {
-        this.node = node;
-        this.range = range;
-    }
-}
-
 public class ValidateBinarySearchTree {
 
     public static void main(String[] args) {

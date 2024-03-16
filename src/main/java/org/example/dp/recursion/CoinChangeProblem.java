@@ -2,7 +2,7 @@ package org.example.dp.recursion;
 
 public class CoinChangeProblem {
     public static void main(String[] args) {
-        System.out.println(coinChange(new int[]{2}, 3));
+        System.out.println(coinChange(new int[]{1,2,5}, 11));
     }
 
     public static int coinChange(int[] coins, int amount) {

@@ -24,11 +24,15 @@ public class PartitionArrayInto3EqualSubArray {
         int sumForSubArray = prefix[arr.length - 1] / 3;
         for (int i = 0; i < arr.length; i++) {
             if (count == 0 && prefix[i] == sumForSubArray) {
+                //reached the sum first time
                 count++;
             } else if (count == 1 && prefix[i] == 2 * sumForSubArray) {
+                //reached the sum second time
                 count++;
             } else if (count == 2 && prefix[i] == 3 * sumForSubArray) {
+                //reached the sum third time
                 if (i == arr.length - 1) {
+                    //reached in th end of array
                     return true;
                 }
             }

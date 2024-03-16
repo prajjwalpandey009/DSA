@@ -24,22 +24,37 @@ public class MaximumDepth {
         System.out.println(maxDepth(treeNode));
     }
 
+//    public static int maxDepth(TreeNode root) {
+//        Stack<NodeAndDepth> stack = new Stack<>();
+//        stack.push(new NodeAndDepth(root,0));
+//        int maxDepth = 0;
+//        while (stack.size() != 0) {
+//            NodeAndDepth nodeAndDepth = stack.pop();
+//            TreeNode treeNode = nodeAndDepth.treeNode;
+//            int depth = nodeAndDepth.sum +1;
+//            maxDepth = Math.max(maxDepth, depth);
+//            if (treeNode.left != null) {
+//                stack.push(new NodeAndDepth(treeNode.left, depth));
+//            }
+//            if (treeNode.right != null) {
+//                stack.push(new NodeAndDepth(treeNode.right, depth));
+//            }
+//        }
+//        return maxDepth;
+//    }
+
     public static int maxDepth(TreeNode root) {
-        Stack<NodeAndDepth> stack = new Stack<>();
-        stack.push(new NodeAndDepth(root,0));
-        int maxDepth = 0;
-        while (stack.size() != 0) {
-            NodeAndDepth nodeAndDepth = stack.pop();
-            TreeNode treeNode = nodeAndDepth.treeNode;
-            int depth = nodeAndDepth.sum +1;
-            maxDepth = Math.max(maxDepth, depth);
-            if (treeNode.left != null) {
-                stack.push(new NodeAndDepth(treeNode.left, depth));
-            }
-            if (treeNode.right != null) {
-                stack.push(new NodeAndDepth(treeNode.right, depth));
-            }
+        return solveMaxDepth(root, 0);
+    }
+
+    public static int solveMaxDepth(TreeNode root, int depth){
+        if(root==null){
+            return depth;
         }
-        return maxDepth;
+
+        int left  = solveMaxDepth(root.left, depth+1);
+        int right =  solveMaxDepth(root.right, depth+1);
+
+        return Math.max(left, right);
     }
 }

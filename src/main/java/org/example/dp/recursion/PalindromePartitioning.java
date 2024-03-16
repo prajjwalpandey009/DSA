@@ -1,7 +1,6 @@
 package org.example.dp.recursion;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class PalindromePartitioning {
