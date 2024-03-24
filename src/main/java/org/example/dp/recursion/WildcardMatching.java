@@ -2,7 +2,7 @@ package org.example.dp.recursion;
 
 public class WildcardMatching {
     public static void main(String[] args) {
-        System.out.println(isMatch("", "***"));
+        System.out.println(isMatch("prajjwal", "pra?*al"));
     }
 
     public static boolean isMatch(String s, String p) {
