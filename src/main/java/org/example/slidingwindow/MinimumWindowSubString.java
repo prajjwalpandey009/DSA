@@ -1,4 +1,4 @@
-package org.example.Hash;
+package org.example.slidingwindow;
 
 //Algorithm
 //1- First calculate frequency of each character in target string

@@ -1,4 +1,4 @@
-package org.example.twopointer;
+package org.example.slidingwindow;
 
 public class MinimumSizeSubarraySum {
     public static void main(String[] args) {
