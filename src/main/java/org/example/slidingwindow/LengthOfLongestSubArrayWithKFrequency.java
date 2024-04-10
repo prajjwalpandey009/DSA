@@ -20,11 +20,9 @@ public class LengthOfLongestSubArrayWithKFrequency {
             map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
 
             //release
-            if (map.getOrDefault(nums[i], 0) > k) {
-                while (map.getOrDefault(nums[i], 0) > k && j <= i) {
-                    map.put(nums[j], map.getOrDefault(nums[j], 1) - 1);
-                    j++;
-                }
+            while (map.getOrDefault(nums[i], 0) > k && j <= i) {
+                map.put(nums[j], map.getOrDefault(nums[j], 1) - 1);
+                j++;
             }
 
             //its also calculate length as well

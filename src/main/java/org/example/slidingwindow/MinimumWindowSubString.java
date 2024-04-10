@@ -17,50 +17,39 @@ public class MinimumWindowSubString {
     }
 
     public static String minWindow(String s, String t) {
-        Map<Character, Integer> map1 = new HashMap<>();
+        Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < t.length(); i++) {
-            map1.put(t.charAt(i), map1.getOrDefault(t.charAt(i), 0) + 1);
+            map.put(t.charAt(i), map.getOrDefault(t.charAt(i), 0) + 1);
         }
-        //match count
-        int mtc = 0;
 
-        //desired match count
+        int i = 0;
+        int j = 0;
+        String ans = "";
+        int mtc = 0;
         int dmtc = t.length();
 
-        //counter to traverse entire string
-        int ct1 = 0;
+        Map<Character, Integer> smap = new HashMap<>();
 
-        int ct2 = 0;
-
-        String cans = "";
-
-        Map<Character, Integer> map2 = new HashMap<>();
-        while (ct1 <= s.length() - 1) {
-            //acquiring character from string
-            map2.put(s.charAt(ct1), map2.getOrDefault(s.charAt(ct1), 0) + 1);
-            if (map2.getOrDefault(s.charAt(ct1), 0) <= map1.getOrDefault(s.charAt(ct1), 0)) {
+        while (i < s.length()) {
+            smap.put(s.charAt(i), smap.getOrDefault(s.charAt(i), 0) + 1);
+            if (smap.getOrDefault(s.charAt(i), 0) <= map.getOrDefault(s.charAt(i), 0)) {
                 mtc++;
             }
-            //collect and release match count
-            while (mtc == dmtc && ct2 <= ct1) {
 
-                //collect
-                if (cans.length() == 0 || s.substring(ct2, ct1 + 1).length() < cans.length()) {
-                    cans = s.substring(ct2, ct1 + 1);
+            while (mtc >= dmtc) {
+                if(ans.isEmpty() || ans.length() > s.substring(j, i).length()){
+                    ans = s.substring(j, i+1);
                 }
-
-                //release
-                map2.put(s.charAt(ct2), map2.getOrDefault(s.charAt(ct2), 1) - 1);
-
-                //reduce the count
-                if (map2.getOrDefault(s.charAt(ct2), 0) < map1.getOrDefault(s.charAt(ct2), 0)) {
+                smap.put(s.charAt(j), smap.getOrDefault(s.charAt(j), 1) - 1);
+                if(map.getOrDefault(s.charAt(j), 0) > smap.getOrDefault(s.charAt(j), 0)){
                     mtc--;
                 }
-                ct2++;
+                j++;
             }
-            ct1++;
+            i++;
         }
-        return cans;
+
+        return ans;
     }
 
 
